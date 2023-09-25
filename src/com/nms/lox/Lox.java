@@ -32,7 +32,6 @@ public class Lox {
     BufferedReader reader = new BufferedReader(input);
 
     for (;;) {
-      System.out.println("> ");
       String line = reader.readLine();
       if (line == null) {
         break;
@@ -48,7 +47,6 @@ public class Lox {
       System.exit(65);
     }
 
-    System.out.println("hello world: ");
     Scanner scanner = new Scanner(source);
     List<Token> tokens = scanner.scanTokens();
 
